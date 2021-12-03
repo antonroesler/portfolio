@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>
+<html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Application Landscape Visualizer</title>
+    <meta name="description" content="">
+    <meta name="author" content="Anton Rösler">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+  ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <style type="text/css" media="screen">
+
+        #start {
+            background: white;
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+        }
+
+        #start .row {
+            max-width: 1024px;
+        }
+
+        #start .section-intro {
+            max-width: 800px;
+        }
+
+    </style>
+
+
+
+        <!-- script
+        ================================================== -->
+        <script src="js/modernizr.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- favicons
+            ================================================== -->
+        <link rel="icon" type="image/png" href="images/cropped-ARLogo.gif">
+
+</head>
+
+<body id="top">
+
+<!-- header
+================================================== -->
+
+<header>
+    <div class="row">
+
+        <div class="top-bar">
+            <a class="menu-toggle" href="#"><span>Menu</span></a>
+
+            <div class="logo">
+                <a href="/">Anton</a>
+            </div>
+
+            <nav id="main-nav-wrap">
+                <ul class="main-navigation">
+                    <li><a href="/#intro" title="">Home</a></li>
+                    <li><a href="/#about" title="">About</a></li>
+                    <li><a href="/#resume" title="">Resume</a></li>
+                    <li><a href="/#portfolio" title="">Portfolio</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- /top-bar -->
+
+    </div> <!-- /row -->
+</header> <!-- /header -->
+
+<!-- intro section
+================================================== -->
+
+<section id="intro">
+
+    <div class="intro-overlay"></div>
+
+    <div class="intro-content">
+        <div class="row">
+
+            <div class="col-twelve">
+
+
+                <h1>Anton Rösler.</h1>
+                <h5>Computer Science Student | Python Back-End Engineer</h5>
+
+                <a class="button stroke" href="/#about" title="">More About Me</a>
+
+            </div>
+
+        </div>
+    </div> <!-- /intro-content -->
+
+    <ul class="intro-social">
+        <li><a href="https://www.linkedin.com/in/antonroesler/?locale=en_US"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/antonroesler"><i class="fa fa-github"></i></a></li>
+        <li><a href="mailto:anton.roesler@stud.fra-uas.de"><i class="fa icon-mail"></i></a></li>
+
+    </ul> <!-- /intro-social -->
+
+</section> <!-- /intro -->
+
+
+<!-- Style Demo
+================================================== -->
+<section id="start">
+
+    <div class="row section-intro">
+
+        <div class="col-twelve tab-full">
+            <h1>Application Landscape Visualizer.</h1>
+        </div>
+    </div> <!-- /row -->
+
+    <div class="row">
+        <div class="col-twelve tab-full">
+            <p class="drop-cap">
+                The Application Landscape Visualizer is a JavaScript web application that was created by 5 fellow
+                students and me as part of the module &#8220;Advanced Programming&#8221; in spring 2021. It is a
+                prototype for an application that enables companies to visualize and analyze their application
+                landscape.
+                <a href="http://application-landscape-visualizer.xyz" data-type="URL"
+                   data-id="application-landscape-visualizer.xyz">Click here to test out a demo version of the
+                    project</a>. Click on &#8216;Load&#8217; to load a demo diagram and explore the possibilities of our
+                tool. It is a desktop tool and not really mobile friendly.
+                <br><br>
+
+                The Application Landscape Visualizer is used to analyze and manage such complex application landscapes.
+
+                This can be done by adding, deleting or editing applications in a simple and intuitive way. Furthermore,
+                applications can be set in relation to each other to display hierarchical structures. To keep a better
+                overview, there are many graphical functions. The applications can be organized according to different
+                layout types, the connections can be displayed differently, and the applications can be colored
+                according to different attributes.
+
+                The graphs can be analyzed to obtain more detailed insights about the hierarchies. Single applications
+                can be isolated and their predecessors and descendants can be explored. In this way, dependencies
+                between applications can be identified and acted upon.
+
+                By using histograms and heat maps, the data can be observed from different views. This makes it possible
+                to analyze attributes across applications and identify patterns.
+
+                The Application Landscape Visualizer is a full-stack web application. That means the software runs
+                platform independent in any browser. The software can also be operated on larger mobile devices such as
+                tablets through adding gesture control.
+                <br><br>
+                The code for the project can be found on my <a
+                    href="https://github.com/antonroesler/application-landscape-visualizer" data-type="URL"
+                    data-id="https://github.com/antonroesler/application-landscape-visualizer">GitHub</a>.
+                <img src="images/projects/app-land-viz-demo.png"
+                     alt="Demo Picture of what the App looks like">
+
+            </p>
+
+
+        </div>
+
+    </div> <!-- /row -->
+
+    <div class="row">
+        <div class="col-twelve tab-full">
+            <h1>What it does.</h1>
+            <p>
+                The program allows the user to create applications and assign them metadata such as technical owner,
+                start and shutdown date and some more. The attributes listed are of course for illustration purposes
+                only and to demonstrate other functions such as filtering. Other meta attributes can be implemented with
+                simplicity. The available cover all common data types: string values (license), lists (tags), numeric
+                values (version) date values (shutdown date).
+            </p>
+            <p>
+                Basic features include:
+            </p>
+            <ul>
+                <li>The creation of applications</li>
+                <li>The creation of connections using drag and drop</li>
+                <li>Manually moving applications and applying an auto layout according to different algorithms.</li>
+                <li>Changing the connection style</li>
+                <li>Exporting the diagram as PNG or SVG</li>
+                <li>Saving and loading diagrams to the cloud database (only limited in the public web version)</li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-four">
+                <img src="images/projects/create.png" alt="">
+            </div>
+            <div class="col-four">
+                <img src="images/projects/export.png" alt="">
+            </div>
+            <div class="col-four">
+                <img src="images/projects/layout.png" alt="">
+            </div>
+        </div>
+
+    </div> <!-- /row -->
+
+    <div class="row">
+        <div class="col-twelve tab-full">
+            <p>
+                Users can create filters that cover one or more values (even of different attributes). Any number of
+                filters can be created. They can be combined among each other and also deactivated and then reactivated.
+            </p>
+            <p >
+                Users can perform coloring of the applications. Any attribute from the metadata can be selected as a
+                source. As an example, here is shown how the coloring of the attribute ‘Technical Owner’ looks like in
+                our demo landscape:
+            </p>
+            <img src="images/projects/color-tech-owner.png">
+            <p >It is also possible to apply a color gradient to a quantitative attribute:</p>
+            <img src="images/projects/color-shutdown-date.png">
+            <p >It is further possible to isolate a single node and explore the graph from there by
+                showing parent/child nodes.</p>
+            <img src="images/projects/isolate-1.png">
+            <p>Working with a large graph it is useful to see which applications are predecessors or
+                descendants of a certain other application. This can be easily accomplished by adding a color to all
+                parent and child nodes:</p>
+            <img src="images/projects/parents-children-1.png">
+            <p>The histogram can show the distribution of an attribute e.g. the ‘Technical Owner’. It is then shown how
+                many applications have which technical owner. In addition, graph properties can also be shown as a
+                histogram, e.g. the number of inputs to a node.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-six">
+             <img src="images/projects/hist-node-1.png">
+        </div>
+        <div class="col-six">
+             <img src="images/projects/hist-tech-1.png">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-twelve">
+            <p>There are a lot of additional features that can be tried out in the web version.</p>
+        </div>
+    </div>
+
+
+
+</section> <!--styles -->
+
+<!-- contact
+================================================== -->
+
+<section id="contact">
+
+    <div class="row section-intro">
+        <div class="col-twelve">
+
+            <h5>Contact</h5>
+            <h1>Send me a Message.</h1>
+
+            <p class="lead">For inquiries or messages of any kind you can send me a mail or contact me via <a style="color: white;"
+                    href="https://www.linkedin.com/in/antonroesler/?locale=en_US"><u>LinkedIn</u></a>. I will be happy to hear from you.</p>
+
+        </div>
+    </div> <!-- /section-intro -->
+<!--
+    <div class="row contact-form">
+
+        <div class="col-twelve">
+
+
+            <form name="contactForm" id="contactForm" method="post" action="/sendMail">
+                {% csrf_token %}
+                <fieldset>
+
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
+                               required="">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
+                               required="">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
+                                  required=""></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="submitform">Submit</button>
+                        <div id="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+
+            <div id="message-warning">
+            </div>
+
+            <div id="message-success">
+                <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+            </div>
+
+        </div>
+
+    </div> -->
+
+    <div class="row contact-info">
+
+        <div class="col-six tab-full">
+
+            <div class="icon">
+                <i class="icon-pin"></i>
+            </div>
+
+            <h5>Location</h5>
+
+            <p>
+                Frankfurt am Main<br>
+                Germany
+            </p>
+
+        </div>
+
+        <div class="col-six tab-full collapse">
+
+            <div class="icon">
+                <i class="icon-mail"></i>
+            </div>
+
+            <h5>Email Me At</h5>
+
+            <p>anton.roesler@stud.fra-uas.de<br>
+                anton.roesler98@googlemail.com.com
+            </p>
+
+        </div>
+
+    </div> <!-- /contact-info -->
+
+</section> <!-- /contact -->
+
+<!-- footer
+================================================== -->
+
+<footer>
+    <div class="row">
+
+        <div class="col-four tab-full pull-right social">
+
+            <ul class="footer-social">
+                <li><a href="https://www.linkedin.com/in/antonroesler/?locale=en_US"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/antonroesler"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+        </div>
+
+        <div class="col-eight tab-full">
+            <div class="copyright">
+                <span>© Copyright Anton Rösler 2021.</span>
+                <span style="color: #333333">Design inspired by <a href="http://www.styleshout.com/" style="color: #333333">styleshout</a></span>
+            </div>
+        </div>
+
+        <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+        </div>
+
+    </div> <!-- /row -->
+</footer>
+
+<div id="preloader">
+    <div id="loader"></div>
+</div>
+
+<!-- Java Script
+================================================== -->
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
