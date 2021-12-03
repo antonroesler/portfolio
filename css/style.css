@@ -1,0 +1,22 @@
+/* Timeline */
+
+#timeline-container {
+    margin-bottom: 5rem;
+    width: 60%;
+    height: 20rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#timeline-container button {
+    margin: 0;
+!important;
+    white-space: normal;
+    line-height: normal;
+}
+
+#timeline-container div {
+    word-wrap: normal;
+    font-family: "poppins-bold", sans-serif;
+    font-weight: lighter;
+}
