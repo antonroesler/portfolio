@@ -869,3 +869,19 @@ textarea {
 }
 
 /*# sourceMappingURL=base.css.map */
+
+
+
+.mobile-spacer {
+	width: 100%;
+	height:  0rem;
+}
+
+@media (max-width:  1024px){
+.mobile-spacer{
+	width: 100%;
+	height:  10rem;
+}
+}
+
+
