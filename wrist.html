@@ -10,8 +10,8 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Bosch</title>
-    <meta name="description" content="Something on my Internship at Bosch.">
+    <title>Wrist Conduct</title>
+    <meta name="description" content="">
     <meta name="author" content="Anton Rösler">
 
     <!-- mobile specific metas
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/style.css">
+
 
 
     <style type="text/css" media="screen">
@@ -46,14 +47,15 @@
     </style>
 
 
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/main.js"></script>
 
-    <!-- favicons
-     ================================================== -->
-    <link rel="icon" type="image/png" href="images/cropped-ARLogo.gif">
+        <!-- script
+        ================================================== -->
+        <script src="js/modernizr.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- favicons
+            ================================================== -->
+        <link rel="icon" type="image/png" href="images/cropped-ARLogo.gif">
 
 </head>
 
@@ -61,6 +63,7 @@
 
 <!-- header
 ================================================== -->
+
 <header>
     <div class="row">
 
@@ -117,7 +120,6 @@
     </ul> <!-- /intro-social -->
 
 </section> <!-- /intro -->
-</section> <!-- /intro -->
 
 
 <!-- Style Demo
@@ -125,76 +127,119 @@
 <section id="start">
 
     <div class="row section-intro">
-        <img src="images/boschlogo.png">
 
         <div class="col-twelve tab-full">
-            <h1>My Internship at Bosch.</h1>
+            <h1>Wrist Conduct.</h1>
         </div>
     </div> <!-- /row -->
-
 
     <div class="row">
         <div class="col-twelve tab-full">
             <p class="drop-cap">
-                In the summer of 2021, I was looking for an internship position for a six-month full-time internship
-                starting in mid-March 2022. Bosch quickly became my favorite as a global market leader and, in my
-                opinion, Germany's most innovative company. I didn't want to work in a company with old-fashioned
-                technology, but to be part of a company where brand new products are created with cutting-edge
-                technologies.
-            </p>
-            <p>
-                One job posting for an internship in particular caught my eye: <strong>Software Engineering Intern for Machine
-                Learning Application</strong>. After my application and an MS Teams interview, I was finally offered the position.
-            </p>
-            <p>
-                From mid March 2022 I will start at Bosch Engineering in Abstatt, Germany, in an agile software development team. The team I will be working in is creating a web application that uses various ML algorithms to analyze measurement data from test drives in vehicles.  My initial task will be to project feature vectors onto a 2D representation using appropriate dimensionality reduction methods, thus enabling the interactive selection of clusters by the user. The respective algorithms are to be integrated into the back-end of the web application.
-            </p>
-            <p>
-                I would like to take this opportunity to thank the very friendly team at Bosch who made me feel very
-                comfortable from the very beginning of the application process.
+                WristConduct is a project I worked on in winter 2022 with two fellow students. We summarized our work in a paper <strong>WristConduct: Biometric User Authentication Using Bone Conduction at the Wrist</strong> that you can find below.
+                <br><br>
+                As the title of the paper suggests the project was on authenticating users by their wrist. To do that we used a bone conduction speaker to send a three-second white noise sound signal through the tests subjects wrist and a larynx microphone to record the signal at the other side of the wrist. Using machine learning we trained models to authenticate a test subject. 
+
             </p>
         </div>
+
     </div> <!-- /row -->
-
-
 
     <div class="row">
-
-        <div class="col-twelve">
-
-            <h3>Bosch Stats</h3>
-
-            <ul class="stats-tabs">
-                <li><a href="https://www.bosch.com/de/unternehmen/zahlen-und-fakten/">71.5 Billion <em>€ Revenue</em></a></li>
-                <li><a href="https://www.bosch.com/de/unternehmen/zahlen-und-fakten/">5.9 Billion <em>€ Expenditure for R&D</em></a></li>
-                <li><a href="https://www.bosch.com/de/unternehmen/zahlen-und-fakten/">395 000 <em>Employees</em></a></li>
-                <li><a href="https://www.bosch.com/de/nachhaltigkeit/umwelt/">0 <em>g CO<sub>2</sub>: Climate neutral since 2020</em></a></li>
-            </ul>
-
+        <div class="col-twelve tab-full">
+            <h1>Study Setup</h1>
+            <p>
+                The study was conducted at Frankfurt University of Applied Science. We recorded 10 - 12 recordings of 24 participants.  
+            </p>
+        
+        The images below show our apparatus in action. The silver cylinder is the bone conduction speaker. The black device on the upper side of the wrist is the larynx microphone. A larynx microphone was used since it does not pick up any surrounding sound that travel through the air, but only the sound waves that come through the wrist.
+        <div class="row">
+            <div class="col-four">
+                <img src="images/projects/wrist_setup1.jpg" alt="">
+            </div>
+            <div class="col-four">
+                <img src="images/projects/wrist_apparatus1.jpg" alt="">
+            </div>
+            <div class="col-four">
+                <img src="images/projects/wrist_setup2.jpg" alt="">
+            </div>
         </div>
+    </div>
 
     </div> <!-- /row -->
+
+    <div class="row">
+        <div class="col-twelve tab-full">
+            <h1>Model Training</h1>
+            Since we were intrusted in authentication, we built a binary classifier that is trained on one test subject. The classifier either accepts (output 1) or rejects (output 2) a new recording. <br>
+
+            Since we had 24 participants we created 24 datasets were in each dataset one the recordings of one test subject were the positive samples and all other recordings were labeled as negatives.
+        </div>
 
         <div class="row">
-        <div class="col-twelve tab-full">
-            <h2>About Bosch</h2>
-
-            <p>
-                One of the ten largest companies in Germany, Robert Bosch GmbH is best known as a worldwide supplier of
-                automotive equipment, with world leadership in fuel injection systems and antilock brakes. The company
-                has also developed into a world leader in various other areas, including communications and radio
-                technology, traffic management systems, power tools, household appliances, thermotechnology, automation
-                technology, and packaging machines. Bosch has operations in more than 50 countries on every continent
-                through its subsidiaries and associated companies. Since 1964, 92 percent of the company has been owned
-                by the Robert Bosch Foundation (the Bosch family owns the remaining 8 percent), which runs the company
-                on the basis of nonprofit principles and uses its share of company profits to fund various philanthropic
-                programs. (Source: <a href="https://www.referenceforbusiness.com/history2/54/Robert-Bosch-GmbH.html">Reference
-                For Business</a>)
-            </p>
+            <div class="col-three">
+                <div style="height:2px; width: 100%"></div>
+            </div>
+            <div class="col-six">
+                <img src="images/projects/wrist_cross.png" alt="">
+            </div>
         </div>
+
+        <div class="col-twelve tab-full">
+            These datasets are highly unbalanced with about 10 positive to 230 negative samples. So what we did is create 5 datasets for each test subject that hold all positive samples for that subject and 92 shuffled negative samples. <br>
+            Therefore we trained 5 models for each 24 test subjects. As a model we first used a SDG Support Vector Machine with good results. We then used a deep neural network to achieve even better results.
+        </div>
+
+
+        <div class="col-twelve tab-full">
+            <h1>Results</h1>
+            These are the results of the neural networks. The Metrics are the mean for all (5 times 24) models that were trained. <br>
+            <code>Model Accuracy: 0.9892</code> <br>
+            <br>
+            <code>False Positive Rate : 0.0072  |  Specificity : 0.9928</code> <br>
+            <code>False Negative Rate : 0.0388  |  Sensitivity : 0.9612</code> <br>
+            <br>
+            <code>Recall    : 0.9612</code><br>
+            <code>Precision : 0.9439</code><br>
+            <code>F1-Score  : 0.9524</code><br>
+            <br>
+            Since the data were still unbalanced we also included the Matthew Correlation Coefficient as a score for unbalanced binary classifiers. <br>
+            <code>Matthew Correlation Coefficient: 0.9442</code>
+
+            <br>
+            <br>
+            Below are two box plot foe the neural networks and the SVM that show the accuracy distribution of the five models that were trained for each 24 test subjects.
+
+        </div>
+        <div class="col-twelve tab-full">
+            <p>Finally that ROC curve.</p>
+
+        </div>
+        <div class="row">
+            <div class="col-six">
+                <img src="images/projects/accuracy_box_plot_NN.png" alt="">
+            </div>
+            <div class="col-six">
+                <img src="images/projects/accuracy_box_plot_SVM.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-twelve">
+                <img src="images/projects/mean_roc_auc_nn_svm.png" alt="">
+            </div>
+        </div>
+
+        Our paper will be uploaded here as soon as it it is finalized early march.
+
     </div> <!-- /row -->
 
-</section>
+
+
+
+
+</section> <!--styles -->
 
 <!-- contact
 ================================================== -->
