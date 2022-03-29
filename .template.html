@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/vendor.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/jquery-3.6.0.min.js"></script>
+    </head>
+    <body id="top">
+        <section id="intro"></section>
+        <script>
+            $(document).ready(function () {
+                $("#intro").load("includes/top.html");
+            });
+        </script>
+
+        <section id="contact-me"></section>
+        <script>
+            $(document).ready(function () {
+                $("#contact-me").load("includes/contact.html");
+            });
+        </script>
+
+        <footer id="footer"></footer>
+        <script>
+            $(document).ready(function () {
+                $("#footer").load("includes/footer.html");
+            });
+        </script>
+
+        <script src="js/plugins.js"></script>
+        <script>
+            $(".item-wrap a").magnificPopup({
+                type: "inline",
+                fixedContentPos: false,
+                removalDelay: 300,
+                showCloseBtn: false,
+                mainClass: "mfp-fade",
+            });
+
+            $(document).on("click", ".popup-modal-dismiss", function (e) {
+                e.preventDefault();
+                $.magnificPopup.close();
+            });
+        </script>
+    </body>
+</html>
