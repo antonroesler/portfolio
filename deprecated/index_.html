@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anton Rösler</title>
+    <title>Document</title>
+
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.6.0.min.js"></script>
+
+
 </head>
 <body id="top">
+    <!-- header
+================================================== -->
 
-<section id="intro"></section>
-<script>
-    $(document).ready(function() {
-        $('#intro').load('includes/top.html');
-    });
-</script>
-    
 
+<section id="intro">
+
+
+
+    <div class="intro-content">
+        <div class="row">
+            <div class="col-twelve">
+                <h1>Anton Rösler.</h1>
+                <h5>Computer Science Student | Python Back-End Engineer</h5>
+            </div>
+        </div>
+    </div> <!-- /intro-content -->
+
+    <ul class="intro-social">
+        <li><a href="https://www.linkedin.com/in/antonroesler/?locale=en_US"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/antonroesler"><i class="fa fa-github"></i></a></li>
+        <li><a href="mailto:anton.roesler@stud.fra-uas.de"><i class="fa icon-mail"></i></a></li>
+
+    </ul> <!-- /intro-social -->
+
+</section> <!-- /intro -->
 
 <section id="tldr">
 
@@ -610,7 +628,7 @@
 
                     <h3>Internship</h3>  
 
-                    <p class="desc">In spring 2022 I started a six-month internship at Bosch as a Software Engineering Intern for Machine Learning Applications.</p>
+                    <p class="desc">In spring 2022 I will start a six-month intership at Bosch as an Software Engineering Intern for Machine Learning Applications.</p>
                     <a href="bosch#start" class="button button-primary">Read More</a>
                 </div>                            
 
@@ -651,30 +669,150 @@
     </div> <!-- /services-content -->
         
     </section> <!-- /services -->   
+<!-- contact
+================================================== -->
+<section id="contact-me">
 
-<section id="contact-me"></section> 
-<script>
-    $(document).ready(function() {
-        $('#contact-me').load('includes/contact.html');
-    });
-</script>
+    <div class="row section-intro">
+        <div class="col-twelve">
 
-<footer id="footer"></footer>
-<script>
-    $(document).ready(function() {
-        $('#footer').load('includes/footer.html');
-    });
-</script>
+            <h5>Contact</h5>
+            <h1>Send me a Message.</h1>
+
+            <p class="lead">For inquiries or messages of any kind you can send me a mail or contact me via <a style="color: white;"
+                    href="https://www.linkedin.com/in/antonroesler/?locale=en_US"><u>LinkedIn</u></a>. I will be happy to hear from you.</p>
+
+        </div>
+    </div> <!-- /section-intro -->
+<!--
+    <div class="row contact-form">
+
+        <div class="col-twelve">
 
 
+            <form name="contactForm" id="contactForm" method="post" action="/sendMail">
+                {% csrf_token %}
+                <fieldset>
+
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
+                               required="">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
+                               required="">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
+                                  required=""></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="submitform">Submit</button>
+                        <div id="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+
+            <div id="message-warning">
+            </div>
+
+            <div id="message-success">
+                <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+            </div>
+
+        </div>
+
+    </div> -->
+
+    <div class="row contact-info">
+
+        <div class="col-six tab-full">
+
+            <div class="icon">
+                <i class="icon-pin"></i>
+            </div>
+
+            <h5>Location</h5>
+
+            <p>
+                Frankfurt am Main<br>
+                Germany
+            </p>
+
+        </div>
+
+        <div class="col-six tab-full collapse">
+
+            <div class="icon">
+                <i class="icon-mail"></i>
+            </div>
+
+            <h5>Email Me At</h5>
+
+            <p>anton.roesler@stud.fra-uas.de<br>
+                anton.roesler98@googlemail.com
+            </p>
+
+        </div>
+
+    </div> <!-- /contact-info -->
+
+</section> <!-- /contact -->
+
+
+<!-- footer
+================================================== -->
+
+<footer>
+    <div class="row">
+
+        <div class="col-four tab-full pull-right social">
+
+            <ul class="footer-social">
+                <li><a href="https://www.linkedin.com/in/antonroesler/?locale=en_US"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/antonroesler"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+        </div>
+
+        <div class="col-eight tab-full">
+            <div class="copyright">
+                <span>© Copyright Anton Rösler 2021-2022</span>
+                <span style="color: #999">Design inspired by <a href="http://www.styleshout.com/" style="color: #999">styleshout</a></span>
+            </div>
+        </div>
+    </div> <!-- /row -->
+</footer>
+
+
+<!-- Java Script
+================================================== -->
+<script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/plugins.js"></script>
 <script>
+    	/*----------------------------------------------------*/
+	/*	Modal Popup
+	------------------------------------------------------*/
    $('.item-wrap a').magnificPopup({
+
 type:'inline',
 fixedContentPos: false,
 removalDelay: 300,
 showCloseBtn: false,
 mainClass: 'mfp-fade'
+
 });
 
 $(document).on('click', '.popup-modal-dismiss', function (e) {
