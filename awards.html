@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Anton's Awards</title>
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/vendor.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/jquery-3.6.0.min.js"></script>
+    </head>
+    <body id="top">
+        <section id="intro"></section>
+        <script>
+            $(document).ready(function () {
+                $("#intro").load("includes/top.html");
+            });
+        </script>
+
+<section id="start">
+    <div class="row section-intro">
+        <div class="col-twelve tab-full">
+            <h1>Awards</h1>
+        </div>
+    </div>
+    <!-- /row -->
+
+    <div class="row section-intro">
+        <div class="col-twelve tab-full">
+            <h2>Dean's List</h2>
+            <p>I have been on the Dean's List of the top 5% of students every semester since the 2nd semester (not possible prior to that).</p>
+        </div>
+    </div>
+
+    <div class="row section-intro">
+        <div class="col-twelve tab-full">
+            <h2>Deutschlandstipendium</h2>
+            <p>In October 2021, I was awarded the Deutschlandstipendium (Germany Scholarship) for my academic and community achievements. The Deutschlandstipendium is a scholarship, half of which is provided by a private sponsor or company and the other half by the German government.</p>
+        </div>
+    </div>
+
+
+</section>
+
+
+        <section id="contact-me"></section>
+        <script>
+            $(document).ready(function () {
+                $("#contact-me").load("includes/contact.html");
+            });
+        </script>
+
+        <footer id="footer"></footer>
+        <script>
+            $(document).ready(function () {
+                $("#footer").load("includes/footer.html");
+            });
+        </script>
+
+        <script src="js/plugins.js"></script>
+        <script>
+            $(".item-wrap a").magnificPopup({
+                type: "inline",
+                fixedContentPos: false,
+                removalDelay: 300,
+                showCloseBtn: false,
+                mainClass: "mfp-fade",
+            });
+
+            $(document).on("click", ".popup-modal-dismiss", function (e) {
+                e.preventDefault();
+                $.magnificPopup.close();
+            });
+        </script>
+    </body>
+</html>
