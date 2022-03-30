@@ -1,54 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
     <title>Anton Rösler</title>
+    <meta name="description" content="My portfolio page.">
+    <meta name="author" content="Anton Rösler">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+  ================================================== -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- script
+    ================================================== -->
+
+    <!-- favicons
+        ================================================== -->
+    <link rel="icon" type="image/png" href="images/cropped-ARLogo.gif">
+
 </head>
+
 <body id="top">
 
-<section id="intro"></section>
-<script>
-    $(document).ready(function() {
-        $('#intro').load('includes/top.html');
-    });
-</script>
-    
+<!-- header
+================================================== -->
+<header>
+    <div class="row">
+
+        <div class="top-bar">
+            <a class="menu-toggle" href="#"><span>Menu</span></a>
+
+            <div class="logo">
+                <a href="/">Anton</a>
+            </div>
+
+            <nav id="main-nav-wrap">
+                <ul class="main-navigation">
+                    <li><a href="/#intro" title="">Home</a></li>
+                    <li><a href="/#about" title="">About</a></li>
+                    <li><a href="/#resume" title="">Resume</a></li>
+                    <li><a href="/#portfolio" title="">Portfolio</a></li>
+                    <li><a href="/#services" title="">Current Topics</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- /top-bar -->
+
+    </div> <!-- /row -->
+</header> <!-- /header -->
+
+<!-- intro section
+================================================== -->
+
+<section id="intro">
+
+    <div class="intro-overlay"></div>
+
+    <div class="intro-content">
+        <div class="row">
+
+            <div class="col-twelve">
 
 
-<section id="tldr">
+                <h1>Anton Rösler.</h1>
+                <h5>Computer Science Student | Python Back-End Engineer</h5>
 
-    <div class="row section-intro">
-        <div class="col-twelve">
-            <h1>TL;DR</h1>
+                <a class="button stroke smoothscroll" href="/#about" title="">More About Me</a>
+
+            </div>
+
         </div>
-    </div>
+    </div> <!-- /intro-content -->
 
-    <div class="row about-content">
-        <div class="col-twelve">
-            <div class="col-twelve tab-full">
-                <p>Currently working fulltime @ Bosch as a Software Engineering Intern for Machine Learning Applications</p>
-                <p> Student @ <a href="https://www.frankfurt-university.de/en/"> Frankfurt University of Applied Science</a></p>
-                <p> Studying Engineering Business Information Systems B.Sc. currently in the 6th of 7 semesters.</p>
-                <p>Current GPA: 1.0 (converted to US GPA: 4.0/4.0)</p>
-                
-        </div>
-        </div>
-    </div>
+    <ul class="intro-social">
+        <li><a href="https://www.linkedin.com/in/antonroesler/?locale=en_US"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/antonroesler"><i class="fa fa-github"></i></a></li>
+        <li><a href="mailto:anton.roesler@stud.fra-uas.de"><i class="fa icon-mail"></i></a></li>
+
+    </ul> <!-- /intro-social -->
+
+</section> <!-- /intro -->
 
 
-
-
-
-</section>
-
+<!-- about section
+================================================== -->
 <section id="about">
 
     <div class="row section-intro">
@@ -72,6 +118,31 @@
         </div>
     </div> <!-- /section-intro -->
 
+    <div id="timeline-container">
+      <div style="display: flex">
+  <div style="height: auto; width: 0%; text-align: center;"></div>
+  <div style="height: auto; width: 3em; text-align: center;">today ▼</div>
+</div>
+<div style="display: flex">
+  <button style="color:black; background-color:#FFC43D; height: auto; width: 50%; padding: 0.5rem; text-align: center; border: none; border-radius: 3rem 0 0 3rem;" onclick="location.href='bosch#start'">
+    6 month full-time internship @ Bosch
+  </button>
+  <button style="color:black; background-color:#EF476F; height: auto; width: 30%; padding: 0.5rem; text-align: center; border: none; border-radius: 0;" onclick="location.href='degree#start'">
+    Bachelor thesis
+  </button>
+  <button style="color:black; background-color:#1B9AAA; height: auto; width: 20%; padding: 0.5rem; text-align: center; border: none; border-radius: 0 3rem 3rem 0;" onclick="location.href='degree#start'">
+    Master's Degree
+  </button>
+</div>
+<div style="display: flex">
+  <div style="width: calc(50% - 0.9rem); height:1rem; margin:0; padding:0;"></div>
+  <div style="width:0; height:1rem; margin:0; padding:0; text-align: center;">▲ October 2022</div>
+  <div style="width: 30%; height:1rem; margin:0; padding:0;"></div>
+  <div style="width:0; height:1rem; margin:0; padding:0; text-align: center;">▲ March 2023</div>
+</div>
+
+</div>
+<div class="mobile-spacer"></div>
 
 
     <div class="row about-content">
@@ -80,7 +151,8 @@
 
             <h3>My Degree</h3>
             <p>My degree program is computer science based but deals with the special
-                requirements of business information systems. You may have a look at my <a href="degree#start">degree</a>, including curriculum and my grades for each course. Following my bachelor's degree, I would like to pursue a master's degree in computer science with a focus on machine learning.</p> 
+                requirements of business information systems. <a href="degree#start">Click here to learn
+                    more about my degree program, curriculum and my grades for each course.</a></p>
 
         </div>
 
@@ -88,9 +160,9 @@
 
             <h3>Skills</h3>
             <p>My skills include programming abilities in <strong>Python</strong> and
-                <strong>C</strong>, experience with <strong>SQL</strong> and <strong>NoSQL</strong>
-                databases, <strong>Machine Learning</strong> systems and more. To learn more about my skills you can visit my <a
-                        href="skills#start"> skill </a> page. You can also have a look at some <a href="certificates#start">certificates</a> that I completed as well as <a href="awards#start">'awards'</a> that I have received. </p>
+                <strong>C</strong>, experience with <strong>SQL</strong> and some <strong>NoSQL</strong>
+                databases, <strong>ERP</strong> systems and more. To learn more about my skills you can visit <a
+                        href="skills#start" data-type="page" data-id="89">my skill page</a>.</p>
 
 
         </div>
@@ -114,7 +186,12 @@
         <div class="col-six tab-full">
 
             <h3>Work Experience</h3>
-            <p>During the last years I have worked as a tutor and teaching assistant for several professors at the university. I have also worked as a software engineer on research projects at the university. Currently, I am a full-time intern as a software engineer for machine learning applications at Bosch.</p>
+            <p>During my school years and at the beginning of my studies I worked in a
+                bicycle store for more than 5 years. Due to my very good performance at university, I was quickly
+                offered many jobs at the university by professors. I already worked for the courses &#8216;Object
+                Oriented Programming&#8217;, &#8216;Introduction to Business Informatics&#8217; and &#8216;Databases&#8217;
+                as a teaching assistant/tutor. This semester I am working for the courses &#8216;Project Management&#8217;
+                as well as &#8216;Operating Systems and Computer Networks&#8217;.</p>
 
 
         </div>
@@ -128,8 +205,7 @@
         </div>
     </div>
 
-</section>
-
+</section> <!-- /process-->
 
 
 <!-- resume Section
@@ -240,7 +316,7 @@
                     <div class="timeline-content">
                         <h4>Bosch</h4>
                         <p> I am currently an intern at Bosch Engineering. As a back-end software engineer for intelligent evaluation systems in automotive
-                            applications my main task is the implementation of dimensionality reduction algorithms in Python for the cloud application my team is working on.</p>
+                            applications my main task is the implementation of dimensionality reduction algorithms in python for the cloud application my team is working on.</p>
                     </div>
 
 
@@ -576,9 +652,9 @@
 
 <!-- Curernt Topics Section
    ================================================== -->
-    <section id="current-topics">
+    <section id="services">
 
-        
+        <div class="overlay"></div>
 
         <div class="row section-intro">
         <div class="col-twelve">
@@ -604,7 +680,7 @@
 
                     <h3>Internship</h3>  
 
-                    <p class="desc">In spring 2022 I started a six-month internship at Bosch as a Software Engineering Intern for Machine Learning Applications.</p>
+                    <p class="desc">In spring 2022 I will start a six-month intership at Bosch as an Software Engineering Intern for Machine Learning Applications.</p>
                     <a href="bosch#start" class="button button-primary">Read More</a>
                 </div>                            
 
@@ -646,37 +722,256 @@
         
     </section> <!-- /services -->   
 
-<section id="contact-me"></section> 
-<script>
-    $(document).ready(function() {
-        $('#contact-me').load('includes/contact.html');
-    });
-</script>
+<!-- stats Section
+================================================== -->
+<section id="stats" class="count-up">
 
-<footer id="footer"></footer>
-<script>
-    $(document).ready(function() {
-        $('#footer').load('includes/footer.html');
-    });
-</script>
+    <div class="row">
+        <div class="col-twelve">
+
+            <div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+                <div class="bgrid stat">
+
+                    <div class="icon-part">
+                        <i class="icon-education"></i>
+                    </div>
+
+                    <h3 class="stat-count">
+                        22
+                    </h3>
+
+                    <h5 class="stat-title">
+                        University Courses Completed
+                    </h5>
+
+                </div> <!-- /stat -->
+
+                <div class="bgrid stat">
+
+                    <div class="icon-part">
+                        <i class="icon-pencil-ruler"></i>
+                    </div>
+
+                    <h3 class="stat-count">
+                        12
+                    </h3>
+
+                    <h5 class="stat-title">
+                        Projects 
+                    </h5>
+
+                </div> <!-- /stat -->
+
+                <div class="bgrid stat">
+
+                    <div class="icon-part">
+                        <i class="icon-badge"></i>
+                    </div>
+
+                    <h3 class="stat-count">
+                        5
+                    </h3>
+
+                    <h5 class="stat-title">
+                        Certificates Received
+                    </h5>
+
+                </div> <!-- /stat -->
+
+                <div class="bgrid stat">
+
+                    <div class="icon-part">
+                        <i class="icon-book"></i>
+                    </div>
+
+                    <h3 class="stat-count">
+                        17
+                    </h3>
+
+                    <h5 class="stat-title">
+                        Coding Books Read
+                    </h5>
+
+                </div> <!-- /stat -->
+
+                <div class="bgrid stat">
+
+                    <div class="icon-part">
+                        <i class="icon-cup"></i>
+                    </div>
+
+                    <h3 id="cups-of-tea" class="stat-count">
+                        1184
+                    </h3>
+
+                    <h5 class="stat-title">
+                        Cups of Tea
+                    </h5>
+
+                </div> <!-- /stat -->
+
+                <div class="bgrid stat">
+
+                    <div class="icon-part">
+                        <i class="icon-clock"></i>
+                    </div>
+
+                    <h3 id="coding-hours" class="stat-count">
+                        3402
+                    </h3>
+
+                    <h5 class="stat-title">
+                        Hours of Coding
+                    </h5>
+
+                </div> <!-- /stat -->
+
+            </div> <!-- /stats-list -->
+
+        </div> <!-- /twelve -->
+    </div> <!-- /row -->
+
+</section> <!-- /stats -->
 
 
-<script src="js/plugins.js"></script>
-<script>
-   $('.item-wrap a').magnificPopup({
-type:'inline',
-fixedContentPos: false,
-removalDelay: 300,
-showCloseBtn: false,
-mainClass: 'mfp-fade'
-});
+<!-- contact
+================================================== -->
+<section id="contact">
 
-$(document).on('click', '.popup-modal-dismiss', function (e) {
- e.preventDefault();
- $.magnificPopup.close();
-});
-</script>
+    <div class="row section-intro">
+        <div class="col-twelve">
 
+            <h5>Contact</h5>
+            <h1>Send me a Message.</h1>
+
+            <p class="lead">For inquiries or messages of any kind you can send me a mail or contact me via <a style="color: white;"
+                    href="https://www.linkedin.com/in/antonroesler/?locale=en_US"><u>LinkedIn</u></a>. I will be happy to hear from you.</p>
+
+        </div>
+    </div> <!-- /section-intro -->
+<!--
+    <div class="row contact-form">
+
+        <div class="col-twelve">
+
+
+            <form name="contactForm" id="contactForm" method="post" action="/sendMail">
+                {% csrf_token %}
+                <fieldset>
+
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
+                               required="">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
+                               required="">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
+                                  required=""></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="submitform">Submit</button>
+                        <div id="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+
+            <div id="message-warning">
+            </div>
+
+            <div id="message-success">
+                <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+            </div>
+
+        </div>
+
+    </div> -->
+
+    <div class="row contact-info">
+
+        <div class="col-six tab-full">
+
+            <div class="icon">
+                <i class="icon-pin"></i>
+            </div>
+
+            <h5>Location</h5>
+
+            <p>
+                Frankfurt am Main<br>
+                Germany
+            </p>
+
+        </div>
+
+        <div class="col-six tab-full collapse">
+
+            <div class="icon">
+                <i class="icon-mail"></i>
+            </div>
+
+            <h5>Email Me At</h5>
+
+            <p>anton.roesler@stud.fra-uas.de<br>
+                anton.roesler98@googlemail.com
+            </p>
+
+        </div>
+
+    </div> <!-- /contact-info -->
+
+</section> <!-- /contact -->
+
+
+<!-- footer
+================================================== -->
+
+<footer>
+    <div class="row">
+
+        <div class="col-four tab-full pull-right social">
+
+            <ul class="footer-social">
+                <li><a href="https://www.linkedin.com/in/antonroesler/?locale=en_US"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/antonroesler"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+        </div>
+
+        <div class="col-eight tab-full">
+            <div class="copyright">
+                <span>© Copyright Anton Rösler 2021-2022.</span>
+                <span style="color: #333333">Design inspired by <a href="http://www.styleshout.com/" style="color: #333333">styleshout</a></span>
+            </div>
+        </div>
+
+        <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+        </div>
+
+    </div> <!-- /row -->
+</footer>
+
+
+<!-- Java Script
+================================================== -->
+<script src="js/jquery-2.1.3.min.js"></script>
 
 </body>
+
 </html>

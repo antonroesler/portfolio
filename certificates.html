@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Anton's Certificates</title>
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/vendor.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/jquery-3.6.0.min.js"></script>
+    </head>
+    <body id="top">
+        <section id="intro"></section>
+        <script>
+            $(document).ready(function () {
+                $("#intro").load("includes/top.html");
+            });
+        </script>
+
+<section id="start">
+    <div class="row section-intro">
+        <div class="col-twelve tab-full">
+            <h1>Certificates</h1>
+        </div>
+    </div>
+
+
+
+
+    <div class="row section-intro">
+        <div class="col-twelve tab-full">
+            <h2 class="cert-title">IBM Deep Learning</h2>
+            <h6>Professional Certificate (edX)</h6>
+            <p>In 2020 i finished a 6 course program by IBM in Deep Learning. </p> <br>
+            <p>Certificate: <a href="https://credentials.edx.org/credentials/3757639d5d5c4cd38f55e0a429f2c0d6/">IBM Deep Learning</a></p>
+            <p>Course that were part of the program: </p>
+            <ul class="cert">
+                <li><a href="https://courses.edx.org/certificates/c9b14e371be1467f89153e631c6992dc">Deep Learning Fundamentals with Keras</a></li>
+                <li><a href="https://courses.edx.org/certificates/940ef6d6da8944e099cf879aec1fbad4">Deep Learning with Python and PyTorch</a></li>
+                <li><a href="https://courses.edx.org/certificates/a391b9b1674b4e0baa4df146c16c6ff1">Deep Learning with Tensorflow</a></li>
+                <li><a href="https://courses.edx.org/certificates/7d322e0409fb41f1a5b603a1b9a3324c">Using GPUs to Scale and Speed-up Deep Learning</a></li>
+                <li><a href="https://courses.edx.org/certificates/eed0600707ce460893de0d40cd2ce31a">Applied Deep Learning Capstone Project</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <hr class="cert">
+
+
+
+    <div class="row section-intro">
+        <div class="col-twelve tab-full">
+            <h2 class="cert-title">Databases: Advanced Topics in SQL by Stanford</h2>
+            <h6>Verified Certificate (edX)</h6>
+            <p>I took the certificate in Advanced Topics in SQL from Stanford to enhance my SQL knowledge from the database lecture from university. </p> <br>
+            <p>Certificate: <a href="https://courses.edx.org/certificates/f470b05e65b848c1a369433c7fa1d87b">Advanced Topics in SQL</a></p>
+        </div>
+    </div>
+
+
+
+    <hr class="cert">
+
+
+
+
+    <div class="row section-intro">
+        <div class="col-twelve tab-full">
+            <h2 class="cert-title">C Programming with Linux by Dartmouth</h2>
+            <h6>Professional Certificate (edX)</h6>
+            <p>This comprehensive program from Dartmouth College and IMT Télécom ParisTech includes 7 courses to introduce the basics of C programming, especially for Linux. I decided to learn the C programming language at the end of 2021 to become a better Python developer. I probably won't become a C programmer, but many performance Python libraries as well as Python itself are largely programmed in C. To be as efficient as possible, I think it's important to have at least a good understanding of the next level down.</p> <br>
+            <p>Certificate: <a href="https://credentials.edx.org/credentials/3757639d5d5c4cd38f55e0a429f2c0d6/">IBM Deep Learning</a></p>
+            <p>Course that were part of the program: </p>
+            <ul class="cert">
+                <li><a href="https://courses.edx.org/certificates/5408e4f48c414e358d8b302e90aebc57">C Programming: Getting Started</a></li>
+                <li><a href="https://courses.edx.org/certificates/cc6526207a164608a78e7e98e302ad7f">Language Foundations </a></li>
+                <li><a href="https://courses.edx.org/certificates/1608f3228a7945e2bfaf60b9cd6388eb">Modular Programming and Memory Management </a></li>
+                <li><a href="https://courses.edx.org/certificates/91e7690f262747148d08e2691f0f39bb">Pointers and Memory Management </a></li>
+                <li><a href="https://courses.edx.org/certificates/ac0d4f690b8a4de186f4b012db76d41f">Advanced Data Types </a></li>
+                <li><a href="https://courses.edx.org/certificates/161207f7cda9449eadf76ea3a48755a3">Using Linux Tools and Libraries </a></li>
+                <li><a href="https://credentials.edx.org/login/?next=/credentials/9f582b0d74524f288487fdcad48ef9b4/">C Programming with Linux </a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+
+
+        <section id="contact-me"></section>
+        <script>
+            $(document).ready(function () {
+                $("#contact-me").load("includes/contact.html");
+            });
+        </script>
+
+        <footer id="footer"></footer>
+        <script>
+            $(document).ready(function () {
+                $("#footer").load("includes/footer.html");
+            });
+        </script>
+
+        <script src="js/plugins.js"></script>
+        <script>
+            $(".item-wrap a").magnificPopup({
+                type: "inline",
+                fixedContentPos: false,
+                removalDelay: 300,
+                showCloseBtn: false,
+                mainClass: "mfp-fade",
+            });
+
+            $(document).on("click", ".popup-modal-dismiss", function (e) {
+                e.preventDefault();
+                $.magnificPopup.close();
+            });
+        </script>
+    </body>
+</html>

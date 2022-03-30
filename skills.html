@@ -1,321 +1,120 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]>
-<html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]>
-<html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en"> <!--<![endif]-->
-<head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Anton Skills</title>
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/vendor.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/jquery-3.6.0.min.js"></script>
+    </head>
+    <body id="top">
+        <section id="intro"></section>
+        <script>
+            $(document).ready(function () {
+                $("#intro").load("includes/top.html");
+            });
+        </script>
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Skills</title>
-    <meta name="description" content="">
-    <meta name="author" content="Anton Rösler">
+        
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- CSS
-  ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
-    <style type="text/css" media="screen">
-
-        #start {
-            background: white;
-            padding-top: 12rem;
-            padding-bottom: 12rem;
-        }
-
-        #start .row {
-            max-width: 1024px;
-        }
-
-        #start .section-intro {
-            max-width: 800px;
-        }
-
-    </style>
-
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- favicons
-     ================================================== -->
-    <link rel="icon" type="image/png" href="images/cropped-ARLogo.gif">
-
-</head>
-
-<body id="top">
-
-<!-- header
-================================================== -->
-
-<header>
-    <div class="row">
-
-        <div class="top-bar">
-            <a class="menu-toggle" href="#"><span>Menu</span></a>
-
-            <div class="logo">
-                <a href="/">Anton</a>
+        <section id="start">
+            <div class="row section-intro">
+                <div class="col-twelve tab-full">
+                    <h1>Skills</h1>
+                </div>
             </div>
+            <!-- /row -->
 
-            <nav id="main-nav-wrap">
-                <ul class="main-navigation">
-                    <li><a href="/#intro" title="">Home</a></li>
-                    <li><a href="/#about" title="">About</a></li>
-                    <li><a href="/#resume" title="">Resume</a></li>
-                    <li><a href="/#portfolio" title="">Portfolio</a></li>
-                    <li><a href="/#services" title="">Current Topics</a></li>
-                    <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
-                </ul>
-            </nav>
-        </div> <!-- /top-bar -->
-
-    </div> <!-- /row -->
-</header> <!-- /header -->
-
-<!-- intro section
-================================================== -->
-
-<section id="intro">
-
-    <div class="intro-overlay"></div>
-
-    <div class="intro-content">
-        <div class="row">
-
-            <div class="col-twelve">
-
-
-                <h1>Anton Rösler.</h1>
-                <h5>Computer Science Student | Python Back-End Engineer</h5>
-
-                <a class="button stroke" href="/#about" title="">More About Me</a>
-
+            <div class="row section-intro">
+                <div class="col-twelve tab-full">
+                    <h2>Python</h2>
+                    <p>
+                        Python is my first learned programming language. I use
+                        Python in a wide variety of areas. Automation of
+                        everyday problems, analyzing data with pandas in jupyter
+                        notebooks, visualizing data with matplotlib or plotly,
+                        building APIs with Django and solving coding
+                        problems on LeetCode. Several of my Python projects can
+                        be found on my
+                        <a href="https://github.com/antonroesler">Github</a>.
+                    </p>
+                    <h2>SQL</h2>
+                    <p>
+                        The Databases module of my degree program covers
+                        relational databases in great scope and detail. SQL is
+                        taught in the associated exercise. To improve my SQL
+                        skills, I completed Stanford University's edX course
+                        “Advanced Topics in SQL” in Spring 2021.
+                    </p>
+                    <h2>NoSQL</h2>
+                    <p>
+                        Through the structured data stores course, I have been
+                        able to gain experience with document-oriented databases
+                        (MongoDB), key-value stores (Redis), and graph databases
+                        (neo4j). MongoDB was used as a persistent data storage
+                        on several of my projects.
+                    </p>
+                    <h2>Machine Learning</h2>
+                    <p>
+                        I have been passionate about artificial intelligence and
+                        machine learning for years. In my free time I read many
+                        books on the subject and completed some online courses.
+                        Among other courses, I have earned the IBM Professional
+                        Certificate in Deep Learning. In my current position at 
+                        Bosch, machine learning is the core concept of my daily 
+                        work. 
+                    </p>
+                    <h2>Java</h2>
+                    <p>
+                        Java is the object-oriented language taught at Frankfurt
+                        UAS. Most of my degree's programming projects were
+                        implemented with Java, I passed all these modules with
+                        the highest grade of 1.0.
+                    </p>
+                    <h1>Other Relevant Skills</h1>
+                    <h3>Project Management and Software Engineering</h3>
+                    <h3>REST</h3>
+                    <h3>JavaScript</h3>
+                    <h3>node.js</h3>
+                    <h3>Excel</h3>
+                    <h3>KNIME</h3>
+                </div>
             </div>
+        </section>
 
-        </div>
-    </div> <!-- /intro-content -->
+        <section id="contact-me"></section>
+        <script>
+            $(document).ready(function () {
+                $("#contact-me").load("includes/contact.html");
+            });
+        </script>
 
-    <ul class="intro-social">
-        <li><a href="https://www.linkedin.com/in/antonroesler/?locale=en_US"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="https://github.com/antonroesler"><i class="fa fa-github"></i></a></li>
-        <li><a href="mailto:anton.roesler@stud.fra-uas.de"><i class="fa icon-mail"></i></a></li>
+        <footer id="footer"></footer>
+        <script>
+            $(document).ready(function () {
+                $("#footer").load("includes/footer.html");
+            });
+        </script>
 
-    </ul> <!-- /intro-social -->
+        <script src="js/plugins.js"></script>
+        <script>
+            $(".item-wrap a").magnificPopup({
+                type: "inline",
+                fixedContentPos: false,
+                removalDelay: 300,
+                showCloseBtn: false,
+                mainClass: "mfp-fade",
+            });
 
-</section> <!-- /intro -->
-
-
-<!-- Style Demo
-================================================== -->
-<section id="start">
-
-    <div class="row section-intro">
-
-        <div class="col-twelve tab-full">
-            <h1>Skills</h1>
-        </div>
-    </div> <!-- /row -->
-
-    <div class="row section-intro">
-
-        <div class="col-twelve tab-full">
-            <h2>Python</h2>
-            <p>
-                Python is my first learned programming language. I use Python in a wide variety of areas. Automation of
-                everyday problems, analyzing data with pandas in jupyter notebooks, visualizing data with matplotlib or
-                plotly, building APIs with Django and solving tricky coding problems on LeetCode. Several of my Python
-                projects can be found on my <a href="https://github.com/antonroesler">Github</a>.
-            </p>
-            <h2>SQL</h2>
-            <p>The Databases module of my degree program covers relational databases in great scope and detail. SQL is
-                taught in the associated exercise. To improve my SQL skills, I completed Stanford University’s edX
-                course “Advanced Topics in SQL” in Spring 2021.</p>
-            <h2>NoSQL</h2>
-            <p>Through the structured data stores course, I have been able to gain experience with document-oriented
-                databases (MongoDB), key-value stores (Redis), and graph databases (neo4j). MongoDB was used as a
-                persistent data storage on several of my projects.
-            </p>
-            <h2>Machine Learning</h2>
-            <p>I have been passionate about artificial intelligence and machine learning for years. In my free time I
-                read many books on the subject and completed some online courses. Among other courses, I have earned the
-                IBM Professional Certificate in Deep Learning. Currently I am preparing for the TensorFlow Developer
-                Certificate by Google which I plan to complete in late summer 2021.
-            </p>
-            <h2>Java</h2>
-            <p>Java is the object-oriented language taught at Frankfurt UAS. Most of my degree’s programming projects
-                were implemented with Java, I passed all these modules with the highest grade of 1.0.</p>
-            <h1>Other Relevant Skills</h1>
-            <h3>Project Management and Software Engineering</h3>
-            <h3>REST</h3>
-            <h3>JavaScript</h3>
-            <h3>node.js</h3>
-            <h3>Spring Boot</h3>
-            <h3>HTML and CSS</h3>
-            <h3>Excel</h3>
-
-        </div>
-
-    </div> <!-- /row -->
-
-</section>
-
-<!-- contact
-================================================== -->
-
-<section id="contact">
-
-    <div class="row section-intro">
-        <div class="col-twelve">
-
-            <h5>Contact</h5>
-            <h1>Send me a Message.</h1>
-
-            <p class="lead">For inquiries or messages of any kind you can send me a mail or contact me via <a style="color: white;"
-                    href="https://www.linkedin.com/in/antonroesler/?locale=en_US"><u>LinkedIn</u></a>. I will be happy to hear from you.</p>
-
-        </div>
-    </div> <!-- /section-intro -->
-<!--
-    <div class="row contact-form">
-
-        <div class="col-twelve">
-
-
-            <form name="contactForm" id="contactForm" method="post" action="/sendMail">
-                {% csrf_token %}
-                <fieldset>
-
-                    <div class="form-field">
-                        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
-                               required="">
-                    </div>
-                    <div class="form-field">
-                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
-                               required="">
-                    </div>
-                    <div class="form-field">
-                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-                    </div>
-                    <div class="form-field">
-                        <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
-                                  required=""></textarea>
-                    </div>
-                    <div class="form-field">
-                        <button class="submitform">Submit</button>
-                        <div id="submit-loader">
-                            <div class="text-loader">Sending...</div>
-                            <div class="s-loader">
-                                <div class="bounce1"></div>
-                                <div class="bounce2"></div>
-                                <div class="bounce3"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </fieldset>
-            </form>
-
-
-            <div id="message-warning">
-            </div>
-
-            <div id="message-success">
-                <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-            </div>
-
-        </div>
-
-    </div> -->
-
-    <div class="row contact-info">
-
-        <div class="col-six tab-full">
-
-            <div class="icon">
-                <i class="icon-pin"></i>
-            </div>
-
-            <h5>Location</h5>
-
-            <p>
-                Frankfurt am Main<br>
-                Germany
-            </p>
-
-        </div>
-
-        <div class="col-six tab-full collapse">
-
-            <div class="icon">
-                <i class="icon-mail"></i>
-            </div>
-
-            <h5>Email Me At</h5>
-
-            <p>anton.roesler@stud.fra-uas.de<br>
-                anton.roesler98@googlemail.com.com
-            </p>
-
-        </div>
-
-    </div> <!-- /contact-info -->
-
-</section> <!-- /contact -->
-
-<!-- footer
-================================================== -->
-
-<footer>
-    <div class="row">
-
-        <div class="col-four tab-full pull-right social">
-
-            <ul class="footer-social">
-                <li><a href="https://www.linkedin.com/in/antonroesler/?locale=en_US"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/antonroesler"><i class="fa fa-github"></i></a></li>
-            </ul>
-
-        </div>
-
-        <div class="col-eight tab-full">
-            <div class="copyright">
-                <span>© Copyright Anton Rösler 2021-2022.</span>
-                <span style="color: #333333">Design inspired by <a href="http://www.styleshout.com/" style="color: #333333">styleshout</a></span>
-            </div>
-        </div>
-
-        <div id="go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-        </div>
-
-    </div> <!-- /row -->
-</footer>
-
-<div id="preloader">
-    <div id="loader"></div>
-</div>
-
-<!-- Java Script
-================================================== -->
-<script src="js/jquery-2.1.3.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-
-</body>
-
+            $(document).on("click", ".popup-modal-dismiss", function (e) {
+                e.preventDefault();
+                $.magnificPopup.close();
+            });
+        </script>
+    </body>
 </html>
